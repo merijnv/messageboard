@@ -1,15 +1,18 @@
 package nl.isweg.merijn.messageboards.model;
 
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 /**
  * Data object containing color
  */
-@Data
+@Getter
+@Setter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 public class Color {
-    int r;
-    int g;
-    int b;
+    private int r;
+    private int g;
+    private int b;
 }
